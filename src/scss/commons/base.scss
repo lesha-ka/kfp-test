@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+html,
+body {
+	height: 100%;
+  font-size: 10px;
+  color: $black;
+}
+body {
+    font-family: $raleway;
+    line-height: 1.4;
+}
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+ol,
+ul,
+form,
+figure {
+    padding-inline-start: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+li {
+    list-style-type: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: url(../img/pointer.png), pointer;
+}
+
+img,
+picture {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1376px;
+    margin: 0 auto;
+    @media #{$xl} {
+      max-width: 100%;
+      padding: 0 32px;
+    }
+    @media #{$sm} {
+      max-width: 100%;
+      padding: 0 12px;
+    }
+}
