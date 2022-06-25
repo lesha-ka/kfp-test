@@ -201,6 +201,7 @@
         align-items: flex-start;
         padding: 32px;
         background-image: url(../img/link1.jpg);
+        background-repeat: no-repeat;
         @media #{$sm} {
             padding: 42px 27px;
             min-height: 120px;

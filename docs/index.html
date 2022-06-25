@@ -11,24 +11,25 @@
     <link href="css/style.min.css" type="text/css" rel="stylesheet">
     <script src="js/app.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   </head>
   <body class="body">
     <div class="wrapper wrapper-index"> 
       <header class="header">
         <div class="container">
           <div class="header__inner">
-            <div class="header__burger"> <img src="img/svg/burger.svg" alt=""></div><a class="header__logo" href="#"><img src="img/svg/logo.svg" alt="logo"></a>
+            <div class="header__burger"> <img src="img/svg/burger.svg" alt=""></div><a class="header__logo js-headerLogo" href="#"><img src="img/svg/logo.svg" alt="logo"></a>
             <nav class="header__nav"> 
               <ul class="header__links">
-                <li class="header__link"><a href="#">Home</a></li>
-                <li class="header__link"><a href="#">Leistungen</a></li>
-                <li class="header__link"><a href="#">projekte</a></li>
-                <li class="header__link"><a href="#">WIR</a></li>
-                <li class="header__link"><a href="#">Jobs</a></li>
-                <li class="header__link"><a href="#">kontakt</a></li>
+                <li class="header__link js-headerLink-1"><a href="#">Home</a></li>
+                <li class="header__link js-headerLink-2"><a href="#">Leistungen</a></li>
+                <li class="header__link js-headerLink-3"><a href="#">projekte</a></li>
+                <li class="header__link js-headerLink-4"><a href="#">WIR</a></li>
+                <li class="header__link js-headerLink-5"><a href="#">Jobs</a></li>
+                <li class="header__link js-headerLink-6"><a href="#">kontakt</a></li>
               </ul>
             </nav>
-            <div class="header__message"><a href="#">Jetzt bewerben</a></div>
+            <div class="header__message js-headerMessage"><a href="#">Jetzt bewerben</a></div>
           </div>
         </div>
       </header>
@@ -47,13 +48,13 @@
           </section>
           <section class="description">
             <div class="description__block">
-              <div class="description__col"> 
+              <div class="description__col js-descCol">
                 <h2 class="description__title">KKD St. Johannes Hospital Duisburg&nbsp;/ Ersatzneubau Funktionsgeb&auml;ude</h2>
                 <h3 class="description__subtitle">Kliniken</h3>
                 <p class="description__name">SCHLÜSSELDATEN</p>
                 <p class="description__label">Velbert, 2018 – 2019<br>Lebenshilfe für Menschen mit geistiger Behinderung e.V.<br>BRI: 6.850 m<sup>3</sup> | NF: 1.225 m<sup>2</sup></p>
               </div>
-              <div class="description__col">
+              <div class="description__col js-descColSecond">
                 <h4 class="description__name">Projektbeschreibung</h4>
                 <p class="description__text">Neubau eines Wohnheimes f&uuml;r Menschen mit geistiger Behinderung, sowie Wohnungen f&uuml;r Betreutes Wohnen. Neben den Wohngruppen</p>
                 <p class="description__text">(Wohnheim/station&auml;res Wohnen f&uuml;r 14&nbsp;Pers.) mit Einbettzimmern und dem Betreuten Wohnen (7&nbsp;Wohnungen f&uuml;r insgesamt 9&nbsp;Pers.), wei&szlig;t das Geb&auml;ude f&uuml;r die Betreuung der Bewohner notwendige, sonstige Einrichtungen und R&auml;umlichkeiten, wie B&uuml;ror&auml;ume des Betreuungspersonals, Pflegebad und Gemeinschaftsr&auml;ume auf.</p>
@@ -61,15 +62,15 @@
               </div>
             </div>
           </section>
-          <section class="links"> 
-            <div class="links__item"><a class="links__text" href="#">Zum Nächsten Projekt<span class="links__text-arrow"></span></a></div>
-            <div class="links__item"><a class="links__text" href="#"><span class="links__text-arrow"></span>Vorheriges Projekt</a></div>
+          <section class="links js-links">
+            <div class="links__item js-item-1"><a class="links__text" href="#">Zum Nächsten Projekt<span class="links__text-arrow"></span></a></div>
+            <div class="links__item js-item-2"><a class="links__text" href="#"><span class="links__text-arrow"></span>Vorheriges Projekt</a></div>
           </section>
         </div>
       </main>
-      <footer class="footer"> 
+      <footer class="footer js-footer">
         <div class="container"> 
-          <ul class="footer__contacts">
+          <ul class="footer__contacts js-footer-contacts">
             <li class="footer__contact">
               <p class="footer__contact-name">Alfredstrabe 155</p>
               <p class="footer__contact-text">D-45131 Essen</p>
@@ -86,8 +87,8 @@
                 <p class="footer__contact-text">info@architekten-kfp.de</p></a></li>
           </ul>
           <div class="footer__nav">
-            <div class="footer__copy">&copy;&nbsp;1990-2022. Kraft F&uuml;hres Architekten</div>
-            <div class="footer__links"> <a class="footer__link" href="#">IMPRESSUM</a><a class="footer__link" href="#">DATENSCHUTZ</a></div>
+            <div class="footer__copy js-footer-copy">&copy;&nbsp;1990-2022. Kraft F&uuml;hres Architekten</div>
+            <div class="footer__links js-footer-links"><a class="footer__link" href="#">IMPRESSUM</a><a class="footer__link" href="#">DATENSCHUTZ</a></div>
           </div>
         </div>
       </footer>

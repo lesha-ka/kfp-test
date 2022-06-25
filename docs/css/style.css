@@ -1268,6 +1268,8 @@ body {
 
 body {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
   line-height: 1.4;
 }
 
@@ -1331,6 +1333,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 main {
@@ -1865,6 +1868,7 @@ main {
           align-items: flex-start;
   padding: 32px;
   background-image: url(../img/link1.jpg);
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
   .links__item {
